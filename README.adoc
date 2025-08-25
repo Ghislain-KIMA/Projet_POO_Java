@@ -1,4 +1,5 @@
 = proget Budget
+
 Ce projet est un programme graphique.
 
 == Dépendance du projet
