@@ -1,0 +1,10 @@
+.root
+{
+    -fx-background-color: rgba(185, 92, 6, 0.842) ;
+}
+
+#imagevbox
+{
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75) , 10, 0.5, 0, 2);
+    -fx-background-color: rgba(187, 98, 15, 0.842) ;
+}

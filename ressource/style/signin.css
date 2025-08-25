@@ -1,0 +1,7 @@
+
+.ombre
+{
+    -fx-border-color: rgba(235, 163, 95, 0.842) ;
+    -fx-border-radius: 10px ;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 2);
+}

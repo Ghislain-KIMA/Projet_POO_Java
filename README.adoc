@@ -1,0 +1,17 @@
+= proget Budget
+Ce projet est un programme graphique.
+
+== Dépendance du projet
+. https://gluonhq.com/products/javafx/[openjfx-21.0.8]
+. https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.50.3.0[sqlite-jdbc-3.50.3.0]
+
+== Comment configuer les dépendances :
+. Télécharger les dépendances
+. Décomprésser le zip de openjfx et le placer dans le dossier lib, et placer aussi le fichier .jar du jdbc dans le dossier lib aussi.
+. Le dossier .vscode doit contenir une configuration launch.json ayant une configuration du genre : link:.vscode/launch.json[launch.json]
+
+== Fonctionnement du projet :
+[%hardbreaks]
+Pour comprendre le fonctionnent du projet.
+link:algorithme.drawio[algorithme.drawio]
+link:index.html[Docs]

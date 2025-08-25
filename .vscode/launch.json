@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Budget1_7b29d1c3",
+            "vmArgs": "--module-path ./lib/openjfx-21.0.8_linux-x64_bin-sdk/javafx-sdk-21.0.8/lib --add-modules javafx.controls"
+        }
+    ]
+}
