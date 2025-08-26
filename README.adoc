@@ -11,7 +11,7 @@ L'utilisateur a le choix entre trois types de gestion.
     . Consulter ses gains et dépenses.
     . enregistrer ses économies.
     . consulter l'analyse de ses finances.
-    . établir un budget.
+    . etablir un budget.
 * `Familialle` +
     . Enregistrer l'économie des membres droit.
     . Enregistrer les emprunt dans l'économie. 
