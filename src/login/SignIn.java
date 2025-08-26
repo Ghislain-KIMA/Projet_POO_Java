@@ -23,7 +23,7 @@ public class SignIn extends VBox
         HBox.setHgrow(spacer, Priority.ALWAYS) ;
         HBox connectionHbox = new HBox(new Label("Mot de passe oublié."), spacer, new Button("Connextion")) ;
         VBox vbox = new VBox() ;
-        vbox.getStyleClass().add(("ombre")) ;
+        vbox.getStyleClass().add(("ombrevbox")) ;
         VBox champ = new VBox(20, passwordVbox, connectionHbox) ;
         champ.setPadding(new Insets(10)) ;
         champ.setAlignment(Pos.CENTER) ;
@@ -33,7 +33,7 @@ public class SignIn extends VBox
 
         this.setAlignment(Pos.CENTER) ;
         this.getChildren().addAll(stackPane) ;
-        this.getStylesheets().add("file:ressource/style/signin.css") ;
+        this.getStylesheets().add("file:ressource/style/configlauncher.css") ;
     }
 
     /* À implémenter */

@@ -1,0 +1,46 @@
+#welcome
+{
+    -fx-font-family: "SansSerif" ;
+    -fx-font-weight: bold ;
+}
+
+#message
+{
+    -fx-font-size: 20px ;
+    -fx-font-family: "P052" ;
+    -fx-font-weight: bold ;
+    -fx-font-style: italic ;
+}
+
+#welcome, .navbutton
+{
+    -fx-font-size: 40px ;
+}
+
+.navbutton
+{
+    -fx-background-color: transparent ;
+    -fx-border-color: transparent ;
+    -fx-paddin: 0px ;
+    -fx-text-fill: #633001 ;
+}
+
+.navbutton:hover
+{
+    -fx-text-fill: white ;
+    -fx-scale-x: 1.1 ;
+    -fx-scale-y: 1.1 ;
+}
+
+#nextbutton
+{
+    -fx-background-color: #633001 ;
+    -fx-text-fill: white ;
+    -fx-font-weight: bold ;
+}
+
+#nextbutton:hover
+{
+    -fx-background-color: white ;
+    -fx-text-fill: #633001 ;
+}

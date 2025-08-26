@@ -63,6 +63,7 @@ public class ConfigLauncher extends VBox
 
         this.getChildren().addAll(gestionType, spacer1, config, spacer2) ;
         this.setAlignment(Pos.CENTER) ;
+        this.getStylesheets().add("file:ressource/style/configlauncher.css") ;
     }
 
     private Parent buildGestionType()
@@ -70,8 +71,11 @@ public class ConfigLauncher extends VBox
         HBox types = new HBox() ;
 
         Label personal = new Label("Personal".toUpperCase()) ;
+        personal.getStyleClass().add("gestiontype") ;
         Label family = new Label("Family".toUpperCase()) ;
+        family.getStyleClass().add("gestiontype") ;
         Label association = new Label("Association".toUpperCase()) ;
+        association.getStyleClass().add("gestiontype") ;
 
         Region leftSpacer = new Region() ;
         Region centreSpacer1 = new Region() ;
@@ -106,6 +110,8 @@ public class ConfigLauncher extends VBox
         StackPane.setMargin(configuration, new Insets(15));
         configuration.setMaxSize(configurationWidth, configurationHeigth) ;
         VBox ombreVbox = new VBox() ;
+        // ombreVbox.setId("ombrevbox");
+        ombreVbox.getStyleClass().add("ombrevbox") ;
         VBox.setVgrow(ombreVbox, Priority.ALWAYS);
         ombreVbox.setMinSize(configurationWidth, configurationHeigth) ;
         stackPane.getChildren().addAll(ombreVbox, configuration) ;
@@ -137,6 +143,7 @@ public class ConfigLauncher extends VBox
         StackPane.setMargin(configuration, new Insets(15));
         configuration.setMaxSize(configurationWidth, configurationHeigth) ;
         VBox ombreVbox = new VBox() ;
+        ombreVbox.getStyleClass().add("ombrevbox") ;
         VBox.setVgrow(ombreVbox, Priority.ALWAYS);
         ombreVbox.setMinSize(configurationWidth, configurationHeigth) ;
         stackPane.getChildren().addAll(ombreVbox, configuration) ;
@@ -169,6 +176,7 @@ public class ConfigLauncher extends VBox
         StackPane.setMargin(configuration, new Insets(15));
         configuration.setMaxSize(configurationWidth, configurationHeigth) ;
         VBox ombreVbox = new VBox() ;
+        ombreVbox.getStyleClass().add("ombrevbox") ;
         VBox.setVgrow(ombreVbox, Priority.ALWAYS);
         ombreVbox.setMinSize(configurationWidth, configurationHeigth) ;
         stackPane.getChildren().addAll(ombreVbox, configuration) ;

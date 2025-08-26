@@ -39,7 +39,9 @@ public class Login extends HBox
         imageVbox.setPadding(new Insets(10)) ;
 
         if ((new FileGestion(Paths.get(System.getProperty("user.dir"), "storage/budget.db"))).isExistsFile())
-        { loginVbox = new SignIn() ; }
+        {
+            loginVbox = new SignIn() ;
+        }
         else
         {
             loginVbox = new FirstLaunching() ;
@@ -88,13 +90,13 @@ public class Login extends HBox
             // Supprimer le label si la fenêtre est trop petite
             if (newVal.doubleValue() < 600)
             {
-                this.getChildren().remove(imageVbox);
+                this.getChildren().remove(imageVbox) ;
             }
             else if (!this.getChildren().contains(imageVbox))
             {
-                this.getChildren().addFirst(imageVbox);
+                this.getChildren().addFirst(imageVbox) ;
             }
-        });
+        }) ;
 
         scene.getStylesheets().add("file:ressource/style/mainlogin.css") ;
     }

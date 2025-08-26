@@ -33,6 +33,9 @@ public class FirstLaunching extends VBox
         Button messageLeftButton = new Button("<") ;
         Label messageLabel = new Label(listMessages.get(currentIndex)) ;
         Button messageRightButton = new Button(">") ;
+        messageLeftButton.getStyleClass().add("navbutton") ;
+        messageRightButton.getStyleClass().add("navbutton") ;
+        messageLabel.setId("message");
 
         VBox topVbox = new VBox() ;
         HBox languages = new HBox(new CheckBox()) ;
@@ -42,6 +45,7 @@ public class FirstLaunching extends VBox
         welcome.setAlignment(Pos.CENTER) ;
         VBox.setVgrow(welcome, Priority.ALWAYS) ;
         topVbox.getChildren().addAll(languages, welcome) ;
+        welcome.getChildren().get(0).setId("welcome") ;
         
         HBox messages = new HBox() ;
         Region leftSpacer = new Region() ;
@@ -53,6 +57,7 @@ public class FirstLaunching extends VBox
         messages.setPadding(new Insets(10));
 
         Button nextButton = new Button("Next") ;
+        nextButton.setId("nextbutton") ;
         HBox nextBottomVbox = new HBox(nextButton) ;
         nextBottomVbox.setAlignment(Pos.BOTTOM_RIGHT);
         nextBottomVbox.setPadding(new Insets(rightMarge));
@@ -70,6 +75,7 @@ public class FirstLaunching extends VBox
         
 
         this.setAlignment(Pos.CENTER) ;
+        this.getStylesheets().add("file:ressource/style/firstlaunching.css") ;
     }
 
     private void leftButtonAction()
