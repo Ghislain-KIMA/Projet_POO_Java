@@ -1,3 +1,6 @@
-/bin
-/lib
-/storage
+bin/*
+lib/*
+*.jar
+storage/*
+*.drawio
+*.bkp

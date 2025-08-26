@@ -1,18 +1,38 @@
-= proget Budget
+= Proget Gestion de Budget
 
-Ce projet est un programme graphique.
+
+== Explication du projet :
+*_Le projet est toujours en phase de développement_* +
+Ce projet est un programme graphique. Les publics cibles sont : les étudiants, les fonctionnaires, les pères de famille, les responsables des associations. +
+L'utilisateur a le choix entre trois types de gestion.
+[%hardbreaks]
+* `Personelle`
+    . Sauvegarder ses gains et dépenses.
+    . Consulter ses gains et dépenses.
+    . enregistrer ses économies.
+    . consulter l'analyse de ses finances.
+    . établir un budget.
+* `Familialle` +
+    . Enregistrer l'économie des membres droit.
+    . Enregistrer les emprunt dans l'économie. 
+    . consulter l'analyse financière de la famille. 
+    . Ajouter un membre.
+* `Associative` +
+    . ajouter un membre +
+    . ajouter la cotisation d'un membre
+    . afficher les informations d'un membre.
+    . supprimer un membre +
+    . afficher les informations de l'association.
+
+link:algorithme.drawio.pdf[algorithme.drawio.pdf]
 
 == Dépendance du projet
 . https://gluonhq.com/products/javafx/[openjfx-21.0.8]
 . https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc/3.50.3.0[sqlite-jdbc-3.50.3.0]
 
-== Comment configuer les dépendances :
+== Comment configurer les dépendances :
 . Télécharger les dépendances
 . Décomprésser le zip de openjfx et le placer dans le dossier lib, et placer aussi le fichier .jar du jdbc dans le dossier lib aussi.
 . Le dossier .vscode doit contenir une configuration launch.json ayant une configuration du genre : link:.vscode/launch.json[launch.json]
 
-== Fonctionnement du projet :
-[%hardbreaks]
-Pour comprendre le fonctionnent du projet.
-link:algorithme.drawio[algorithme.drawio]
-link:index.html[Docs]
+
