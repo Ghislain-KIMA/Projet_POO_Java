@@ -1,15 +1,15 @@
 package login;
 
-import javafx.geometry.Insets;
-import javafx.geometry.Pos;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
-import javafx.scene.layout.Region;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.VBox;
+import javafx.geometry.Insets ;
+import javafx.geometry.Pos ;
+import javafx.scene.control.Button ;
+import javafx.scene.control.Label ;
+import javafx.scene.control.PasswordField ;
+import javafx.scene.layout.HBox ;
+import javafx.scene.layout.Priority ;
+import javafx.scene.layout.Region ;
+import javafx.scene.layout.StackPane ;
+import javafx.scene.layout.VBox ;
 
 public class SignIn extends VBox
 {
@@ -19,20 +19,25 @@ public class SignIn extends VBox
 
         StackPane stackPane = new StackPane() ;
         VBox passwordVbox = new VBox(5, new Label("Entrez votre mot de passe"), new PasswordField()) ;
+        passwordVbox.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        passwordVbox.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
         Region spacer = new Region() ;
         HBox.setHgrow(spacer, Priority.ALWAYS) ;
-        HBox connectionHbox = new HBox(new Label("Mot de passe oublié."), spacer, new Button("Connextion")) ;
+        HBox connectionHbox = new HBox(new Label("Mot de passe oublié."), spacer, new Button("Connexion".toUpperCase())) ;
+        connectionHbox.getChildren().get(0).setId("forgetpassword") ;
         VBox vbox = new VBox() ;
-        vbox.getStyleClass().add(("ombrevbox")) ;
+        vbox.getStyleClass().add("ombrevbox") ;
         VBox champ = new VBox(20, passwordVbox, connectionHbox) ;
         champ.setPadding(new Insets(10)) ;
         champ.setAlignment(Pos.CENTER) ;
+        champ.getStyleClass().add("vboxopacity") ;
         stackPane.getChildren().addAll(vbox, champ) ;
         stackPane.setMaxSize(300, 200) ;
         stackPane.setMinSize(300, 200) ;
 
         this.setAlignment(Pos.CENTER) ;
         this.getChildren().addAll(stackPane) ;
+        this.getStylesheets().add("file:ressource/style/signin.css") ;
         this.getStylesheets().add("file:ressource/style/configlauncher.css") ;
     }
 

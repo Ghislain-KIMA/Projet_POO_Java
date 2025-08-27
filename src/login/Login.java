@@ -49,8 +49,8 @@ public class Login extends HBox
             try
             {
                 ConfigDatabase defaultDatabase = new ConfigDatabase(Paths.get(System.getProperty("user.dir"), "storage/budget.db")) ;
-                defaultDatabase.newConfigDatabaseFile() ;
-                defaultDatabase.createDefaultTablesOfConfigDatabase() ;
+                // defaultDatabase.newConfigDatabaseFile() ;
+                // defaultDatabase.createDefaultTablesOfConfigDatabase() ;
             }
             catch(Exception ERROR)
             { System.out.println("ERROR : " + ERROR.getMessage()); }

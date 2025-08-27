@@ -3,11 +3,24 @@
 {
     -fx-background-color: #a5570e ;
     -fx-background-radius: 10px ;
-    /* -fx-padding: 10px ; */
     -fx-border-radius: 10px ;
+    -fx-border-color: white ;
+    -fx-border-width: 0.1px ;
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 2) ;
 }
 
+.vboxlabel
+{
+    -fx-text-fill: white ;
+    -fx-font-size: 15px ;
+}
+
+.vboxtextfield
+{
+    -fx-background-color: white ;
+    -fx-font-weight: bold ;
+    -fx-font-size: 15px ;
+}
 
 .gestiontype
 {
@@ -17,4 +30,15 @@
 .gestiontype:hover
 {
     -fx-text-fill: white ;
+}
+
+.actionbuttons
+{
+    -fx-text-fill: #633001 ;
+    -fx-font-weight: bold ;
+}
+
+.actionbuttons:hover
+{
+    -fx-text-fill: #a5570e ;
 }

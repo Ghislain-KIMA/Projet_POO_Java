@@ -19,7 +19,7 @@ public class ConfigLauncher extends VBox
     private HBox familyConfig ;
     private HBox associationConfig ;
     private int configurationWidth = 300 ;
-    private int configurationHeigth = 400 ;
+    private int configurationHeigth = 450 ;
 
     public ConfigLauncher()
     {
@@ -103,26 +103,42 @@ public class ConfigLauncher extends VBox
         VBox email = new VBox(labelTextFieldSpacer, new Label("Email"), new TextField()) ;
         VBox statutRevenu = new VBox(labelTextFieldSpacer, new Label("Statut de votre revenu"), new TextField()) ;
         VBox revenuMoyenneMois = new VBox(labelTextFieldSpacer, new Label("Combien pensez-vous avoir par mois ?"), new TextField()) ;
+        
+        
         Region spacer = new Region() ;
         HBox.setHgrow(spacer, Priority.ALWAYS) ;
-        HBox actionButtons = new HBox(new Button("Effacer"), spacer, new Button("Enregistrer")) ;
+        HBox actionButtons = new HBox(new Button("Effacer".toUpperCase()), spacer, new Button("Enregistrer".toUpperCase())) ;
         configuration.getChildren().addAll(lastName, firstName, email, statutRevenu, revenuMoyenneMois, actionButtons) ;
         StackPane.setMargin(configuration, new Insets(15));
         configuration.setMaxSize(configurationWidth, configurationHeigth) ;
         VBox ombreVbox = new VBox() ;
         // ombreVbox.setId("ombrevbox");
-        ombreVbox.getStyleClass().add("ombrevbox") ;
         VBox.setVgrow(ombreVbox, Priority.ALWAYS);
         ombreVbox.setMinSize(configurationWidth, configurationHeigth) ;
         stackPane.getChildren().addAll(ombreVbox, configuration) ;
-
+        
         Region leftSpacer = new Region() ;
         Region rightSpacer = new Region() ;
         HBox.setHgrow(leftSpacer, Priority.ALWAYS) ;
         HBox.setHgrow(rightSpacer, Priority.ALWAYS) ;
-
+        
+        /* Style */
+        lastName.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        lastName.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        firstName.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        firstName.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        email.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        email.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        statutRevenu.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        statutRevenu.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        revenuMoyenneMois.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        revenuMoyenneMois.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        actionButtons.getChildren().get(0).getStyleClass().add("actionbuttons") ;
+        actionButtons.getChildren().get(2).getStyleClass().add("actionbuttons") ;
+        ombreVbox.getStyleClass().add("ombrevbox") ;
+        
         hbox.getChildren().addAll(leftSpacer, stackPane, rightSpacer) ;
-
+        
         return hbox ;
     }
 
@@ -152,6 +168,17 @@ public class ConfigLauncher extends VBox
         Region rightSpacer = new Region() ;
         HBox.setHgrow(leftSpacer, Priority.ALWAYS) ;
         HBox.setHgrow(rightSpacer, Priority.ALWAYS) ;
+
+        /* Style */
+        familyName.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        familyEmail.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        periodicite.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        familyName.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        familyEmail.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        periodicite.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        actionButtons.getChildren().get(0).getStyleClass().add("actionbuttons") ;
+        actionButtons.getChildren().get(2).getStyleClass().add("actionbuttons") ;
+        ombreVbox.getStyleClass().add("ombrevbox") ;
 
         hbox.getChildren().addAll(leftSpacer, stackPane, rightSpacer) ;
 
@@ -185,6 +212,19 @@ public class ConfigLauncher extends VBox
         Region rightSpacer = new Region() ;
         HBox.setHgrow(leftSpacer, Priority.ALWAYS) ;
         HBox.setHgrow(rightSpacer, Priority.ALWAYS) ;
+
+        /* Style */
+        associationName.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        associationEmail.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        montantCotisation.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        periodicite.getChildren().get(0).getStyleClass().add("vboxlabel") ;
+        associationName.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        associationEmail.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        montantCotisation.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        periodicite.getChildren().get(1).getStyleClass().add("vboxtextfield") ;
+        actionButtons.getChildren().get(0).getStyleClass().add("actionbuttons") ;
+        actionButtons.getChildren().get(2).getStyleClass().add("actionbuttons") ;
+        ombreVbox.getStyleClass().add("ombrevbox") ;
 
         hbox.getChildren().addAll(leftSpacer, stackPane, rightSpacer) ;
 
