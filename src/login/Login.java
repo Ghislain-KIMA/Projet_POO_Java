@@ -29,10 +29,10 @@ public class Login extends HBox
         super() ;
 
         ImageView imageView = new ImageView(new Image("file:" + Paths.get(System.getProperty("user.dir"), "ressource/image/image_.jpg").toString())) ;
-        // imageView.setPreserveRatio(true) ;
+        imageView.setPreserveRatio(true) ;
 
-        // imageView.setSmooth(true) ;
-        // // VBox.setVgrow(imageView, Priority.ALWAYS);
+        imageView.setSmooth(true) ;
+        // VBox.setVgrow(imageView, Priority.ALWAYS);
         imageVbox = new VBox(imageView) ;
         imageVbox.setId("imagevbox") ;
         imageVbox.setAlignment(Pos.CENTER) ;
@@ -49,8 +49,8 @@ public class Login extends HBox
             try
             {
                 ConfigDatabase defaultDatabase = new ConfigDatabase(Paths.get(System.getProperty("user.dir"), "storage/budget.db")) ;
-                // defaultDatabase.newConfigDatabaseFile() ;
-                // defaultDatabase.createDefaultTablesOfConfigDatabase() ;
+                defaultDatabase.newConfigDatabaseFile() ;
+                defaultDatabase.createDefaultTablesOfConfigDatabase() ;
             }
             catch(Exception ERROR)
             { System.out.println("ERROR : " + ERROR.getMessage()); }

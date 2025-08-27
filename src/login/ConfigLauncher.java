@@ -18,7 +18,7 @@ public class ConfigLauncher extends VBox
     private HBox personalConfig ;
     private HBox familyConfig ;
     private HBox associationConfig ;
-    private int configurationWidth = 300 ;
+    private int configurationWidth = 350 ;
     private int configurationHeigth = 450 ;
 
     public ConfigLauncher()
@@ -151,7 +151,7 @@ public class ConfigLauncher extends VBox
         VBox configuration = new VBox(15) ;
         VBox familyName = new VBox(labelTextFieldSpacer, new Label("Nom de votre famille"), new TextField()) ;
         VBox familyEmail = new VBox(labelTextFieldSpacer, new Label("Email"), new TextField()) ;
-        VBox periodicite = new VBox(labelTextFieldSpacer, new Label("Quelle est la périodicité de cotisation"), new TextField()) ;
+        VBox periodicite = new VBox(labelTextFieldSpacer, new Label("Quelle est la périodicité de cotisation ?"), new TextField()) ;
         Region spacer = new Region() ;
         HBox.setHgrow(spacer, Priority.ALWAYS) ;
         HBox actionButtons = new HBox(new Button("Effacer"), spacer, new Button("Enregistrer")) ;
@@ -194,8 +194,8 @@ public class ConfigLauncher extends VBox
         VBox configuration = new VBox(15) ;
         VBox associationName = new VBox(labelTextFieldSpacer, new Label("Nom de votre association"), new TextField()) ;
         VBox associationEmail = new VBox(labelTextFieldSpacer, new Label("Email"), new TextField()) ;
-        VBox montantCotisation = new VBox(labelTextFieldSpacer, new Label("Quel est le montant de participation"), new TextField()) ;
-        VBox periodicite = new VBox(labelTextFieldSpacer, new Label("Quelle est la périodicité de cotisation"), new TextField()) ;
+        VBox montantCotisation = new VBox(labelTextFieldSpacer, new Label("Quel est le montant de participation ?"), new TextField()) ;
+        VBox periodicite = new VBox(labelTextFieldSpacer, new Label("Quelle est la périodicité de cotisation ?"), new TextField()) ;
         Region spacer = new Region() ;
         HBox.setHgrow(spacer, Priority.ALWAYS) ;
         HBox actionButtons = new HBox(new Button("Effacer"), spacer, new Button("Enregistrer")) ;
